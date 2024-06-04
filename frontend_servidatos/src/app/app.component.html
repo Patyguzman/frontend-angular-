@@ -1,0 +1,25 @@
+
+  <div class="wrapper">
+    <form (ngSubmit)="onSubmit(usuarioForm)" #usuarioForm="ngForm">
+      <h1>Crear usuarios</h1>
+      <div class="input-box">
+        <input type="text" placeholder="Usuario" id="username" name="username" ngModel required>
+        <i class='bx bxs-user'></i>
+      </div>
+      <div class="input-box">
+        <input type="email" placeholder="Correo" id="email" name="email" ngModel required>
+        <i class='bx bxs-envelope'></i>
+      </div>
+      <div class="input-box">
+        <input type="text" placeholder="Teléfono" id="telephone" name="telephone" ngModel required>
+        <i class='bx bxs-envelope'></i>
+      </div>
+      <div class="input-box">
+        <input type="password" placeholder="Contraseña" id="password" name="password" ngModel required>
+        <i class='bx bxs-lock-alt' ></i>
+      </div>
+      <br>
+      <button class="btn waves-effect waves-light" type="submit" name="action">Guardar usuario</button>
+    </form>
+  </div>
+
